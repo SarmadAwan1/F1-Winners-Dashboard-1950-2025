@@ -1,79 +1,79 @@
-# F1-Winners-Dashboard-1950-2025
-Power BI dashboard analyzing Formula 1 winners (1950–2025) — insights into drivers, teams, race durations, and historical trends.
-**🏎️ Formula 1 Winners Dashboard (1950–2025)
-📌 Project Overview**
+**Formula 1 Dashboard (1950–2025)
+📌 Overview**
 
-This Power BI dashboard analyzes Formula 1 race winners from 1950 to 2025.
-It provides insights into drivers, teams, races, and historical trends, helping to visualize the evolution of F1 over the decades.
+This Power BI project provides a comprehensive analysis of Formula 1 racing history from 1950 to 2025. Using interactive dashboards, the report highlights driver and team performance, race distributions, and circuit statistics. The objective is to present both a macro-level view of F1 evolution and micro-level insights into circuits and winners.
 
-The dataset includes information about:
+The dashboard is divided into three structured pages:
 
-Race details (Grand Prix, circuit, year, continent)
+**Overview Dashboard** – a high-level snapshot of races and global trends.
+**Drivers & Teams Dashboard** – in-depth analysis of drivers’ and constructors’ dominance.
+**Circuit Stats Dashboard** – insights into circuit usage, diversity of winners, and race distribution.
 
-Winning driver and team
+Each page contains carefully selected KPIs and visuals, designed for intuitive exploration through slicers and filters.
 
-Race duration and laps
+**Dashboard Pages & Visual Explanations**
+**1️ Overview Dashboard**
 
-**🎯 Key Features**
+<img width="1359" height="763" alt="image" src="https://github.com/user-attachments/assets/96ad4d0b-1efb-4929-9717-dcad8ee4cf88" />
 
-KPIs (Top row)
+The Overview Dashboard provides a high-level summary of Formula 1’s history. It contains key performance indicators (KPIs) and global visuals to understand the scale and distribution of races.
 
-Total Races
+**Visuals Included:**
 
-Unique Winning Drivers
+Total Wins (Card) → Total number of races won in the dataset.
+Total Races (Card) → Aggregate count of all races between 1950–2025.
+Average Laps per Race (Card) → Displays the typical race length.
+Fastest & Longest Race Duration (Cards) → Highlights the shortest and longest races (in minutes).
+Minimum & Maximum Race Duration (Cards) → Range of race times across the dataset.
+Unique Winning Drivers (Card) → Number of distinct race winners.
+Unique Winning Teams (Card) → Number of distinct constructors with victories.
+Map of Wins by Continent (Map Visual) → Shows the geographical distribution of wins across continents.
 
-Unique Winning Teams
+**Interpretation:** This page answers “how big is F1?” by showing the scale of races, the spread across continents, and how race dynamics (laps, durations) vary globally.
 
-Average Race Duration
+**2️ Drivers & Teams Dashboard**
 
-Drivers & Teams
+<img width="1358" height="763" alt="image" src="https://github.com/user-attachments/assets/2ccf9ac9-3c58-49fa-aa42-e16eb1df8a37" />
 
-Top Drivers by Wins (bar chart)
+This dashboard shifts focus from global metrics to individual and team dominance. It captures both the historical success of drivers and teams and the growth of F1’s race calendar.
 
-Top Teams by Wins (bar chart)
+**Visuals Included:**
 
-Historical Trends
+Wins by Driver (Bar Chart) → Ranks drivers by total victories. Highlights career dominance.
+Wins by Team (Bar Chart) → Displays constructors’ historical success. Useful for comparing eras (e.g., Ferrari, Mercedes, Red Bull).
+Races by Year (Line Chart) → Shows how the number of races per season has expanded from the 1950s to the present.
+Races by Year & Continent (Line Chart) → Illustrates globalization of the sport, showing how races expanded beyond Europe into Asia, Americas, Middle East, etc.
 
-Wins by Year (line chart)
+**Interpretation:** This page explains “who dominates F1?” and “how has the race calendar evolved?”
 
-Average Race Duration Over Time (line chart)
+**3️ Circuit Stats Dashboard**
 
-Interactive Filters (Slicers)
+<img width="1359" height="763" alt="image" src="https://github.com/user-attachments/assets/d9d8ec83-3d35-4b37-947a-79e2cd55584e" />
 
-Year / Decade
+The Circuit Stats Dashboard dives into track-level performance and diversity. It identifies the most historic circuits, which drivers dominate certain venues, and where competition is most diverse.
 
-Continent
+**Visuals Included:**
 
-Team
+Top Driver per Circuit (Table) → For each circuit, shows the driver with the highest number of wins.
+Circuit with Most Races (Card) → Identifies the circuit most frequently used in F1 history.
+Circuit with Most Unique Winners (Card) → Highlights circuits with the greatest variety of winning drivers.
+Races Count by Circuit (Bar Chart) → Ranks circuits by frequency of races hosted.
+Unique Winners per Circuit (Treemap/Bar Chart) → Displays how competitive each circuit is (some dominated by a few, others widely shared).
 
-**📊 Insights**
+**Interpretation:** This page answers “which circuits are most iconic?” and “where do many different drivers succeed vs. where do legends dominate?”
 
-🏁 Most successful drivers and teams dominate specific decades.
+**Purpose**
 
-📈 Number of races per year has steadily increased over time.
+The dashboard is designed for data storytelling in sports analytics:
 
-⏱️ Race durations typically cluster around 90–120 minutes, with rare outliers (very short or long races).
+Provide historical context of Formula 1’s growth.
+Compare dominance across drivers, teams, and circuits.
+Enable interactive exploration through slicers (Year, Driver, Team, Circuit, Continent).
 
-**🚀 How to Use**
+**Tools & Technologies**
 
-Clone or download this repository.
+Power BI Desktop → Data modeling, DAX calculations, interactive dashboards.
 
-Open the .pbix file in Power BI Desktop.
+PostgreSQL → Initial data exploration and transformation.
 
-Explore the dashboard interactively using slicers and filters.
-
-**📂 Repository Contents**
-
-winners_f1.pbix → Power BI dashboard file
-
-README.md → Project description & documentation
-
-(Optional: you can also upload the CSV dataset if you want others to reuse it)
-
-**🛠️ Tools Used**
-
-Power BI Desktop → Data modeling, DAX, dashboard creation
-
-PostgreSQL (optional) → For earlier ETL and SQL exploration
-
-GitHub → Project hosting and sharing
+GitHub → Version control and project documentation.
